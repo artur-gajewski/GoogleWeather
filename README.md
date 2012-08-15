@@ -1,4 +1,4 @@
-# GooleWeather module for Zend Framework 2
+# GoogleWeather module for Zend Framework 2
 
 This module provides a way to obtain weather forecast for a given city and use view helper to display taht information on your view scripts.
 
