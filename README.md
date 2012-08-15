@@ -7,6 +7,7 @@ Requirements:
 
 - PHP 5.3
 - Zend Framework 2
+- An active internet connection (module fetches forecast from Google)
 
 See [https://github.com/artur-gajewski/GoogleWeather](https://github.com/artur-gajewski/GoogleWeather)
 
