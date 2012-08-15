@@ -244,6 +244,9 @@ class Weather
     
     /**
      * Fetches the weather forecast for the given city.
+     * 
+     * @return \GoogleWeather\Google\Weather
+     * @throws \Exception 
      */
     public function fetch() 
     {
@@ -315,46 +318,96 @@ class Weather
         return $this;
     }
     
+    /**
+     * Get location of the forecast
+     * 
+     * @return string
+     */
     public function getLocation() {
         $forecast = $this->getForecast();
         return $forecast['location'];
     }
     
+    /**
+     * Get current weather condition
+     * 
+     * @return string
+     */
     public function getCurrentCondition() {
         $forecast = $this->getForecast();
         return $forecast['current']['condition'];
     }
     
+    /**
+     * Get url to the weather image
+     * 
+     * @return string
+     */
     public function getCurrentIcon() {
         $forecast = $this->getForecast();
         return $forecast['current']['icon'];
     }
     
+    /**
+     * Get current temperature
+     * 
+     * @return string
+     */
     public function getCurrentTemperature() {
         $forecast = $this->getForecast();
         return $forecast['current']['temperature'];
     }
     
+    /**
+     * Get weather condition for a given day in array
+     * 
+     * @param type $dayNumber
+     * @return string 
+     */
     public function getForecastCondition($dayNumber) {
         $forecast = $this->getForecast();
         return $forecast['forecast'][$dayNumber]['condition'];
     }
     
+    /**
+     * Get url for the weather image for a given day in array
+     * 
+     * @param type $dayNumber
+     * @return string 
+     */
     public function getForecastIcon($dayNumber) {
         $forecast = $this->getForecast();
         return $forecast['forecast'][$dayNumber]['icon'];
     }
     
+    /**
+     * Get day of the week for a given day in array
+     * 
+     * @param type $dayNumber
+     * @return string 
+     */
     public function getForecastDayOfWeek($dayNumber) {
         $forecast = $this->getForecast();
         return $forecast['forecast'][$dayNumber]['day_of_week'];
     }
     
+    /**
+     * Get day's lowest temperature for a given day in array
+     * 
+     * @param type $dayNumber
+     * @return string 
+     */
     public function getForecastLow($dayNumber) {
         $forecast = $this->getForecast();
         return $forecast['forecast'][$dayNumber]['low'];
     }
     
+    /**
+     * Get day's highest temperature for a given day in array
+     * 
+     * @param type $dayNumber
+     * @return string 
+     */
     public function getForecastHigh($dayNumber) {
         $forecast = $this->getForecast();
         return $forecast['forecast'][$dayNumber]['high'];
