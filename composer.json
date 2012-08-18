@@ -1,0 +1,31 @@
+{
+    "name": "artur-gajewski/GoogleWeather",
+    "description": "This module provides a way to obtain weather forecast for a given city and use view helper to display that information on your view scripts.",
+    "type": "module",
+    "keywords": [
+        "zf2",
+        "google",
+        "weather",
+    ],
+    "homepage": "https://github.com/artur-gajewski/GoogleWeather",
+    "authors": [
+        {
+            "name": "Artur Gajewski",
+            "email": "info@arturgajewski.com",
+            "homepage": "https://github.com/artur-gajewski"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "GoogleWeather": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}
