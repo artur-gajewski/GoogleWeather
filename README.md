@@ -22,6 +22,12 @@ Go to your vendor directory and clone the module from Github:
 git clone https://github.com/artur-gajewski/GoogleWeather
 ```
 
+To install all needed dependancies, run the Composer:
+
+```php
+php composer.phar install
+```
+
 Then add 'GoogleWeather' into the Module array in APPLICATION_ROOT/config/application.config.php
 
 ```php
