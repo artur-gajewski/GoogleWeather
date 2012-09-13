@@ -14,22 +14,19 @@ See [https://github.com/artur-gajewski/GoogleWeather](https://github.com/artur-g
 @Author: Artur Gajewski
 
 
-## Installation
+## Installation with Composer
 
-Go to your vendor directory and clone the module from Github:
+Go to your project directory and add the following line to "require" list in composer.json file:
 
 ```php
-git clone https://github.com/artur-gajewski/GoogleWeather
+"artur-gajewski/google-weather": "dev-master"
 ```
 
-Now go to your project root and install all needed dependancies, run the Composer:
+Now run the Composer:
 
 ```php
-curl -s https://getcomposer.org/installer | php
-
 php composer.phar install
 ```
-
 
 Then add 'GoogleWeather' into the Module array in APPLICATION_ROOT/config/application.config.php
 
