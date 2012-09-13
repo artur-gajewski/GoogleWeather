@@ -1,5 +1,5 @@
 {
-    "name": "artur-gajewski/GoogleWeather",
+    "name": "artur-gajewski/google-weather",
     "description": "This module provides a way to obtain weather forecast for a given city and use view helper to display that information on your view scripts.",
     "type": "module",
     "keywords": [
