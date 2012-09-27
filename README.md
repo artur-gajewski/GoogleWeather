@@ -11,7 +11,7 @@ Requirements:
 
 See [https://github.com/artur-gajewski/GoogleWeather](https://github.com/artur-gajewski/GoogleWeather)
 
-@Author: Artur Gajewski
+Follow me on twitter: @GajewskiArtur
 
 
 ## Installation with Composer
